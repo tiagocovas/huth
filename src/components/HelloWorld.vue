@@ -34,7 +34,6 @@ export default {
 
   methods: {
     updateScroll() {
-      console.log(window.scrollY);
       this.head1Style = `top: ${200 + window.scrollY}px; left: 50px;`
       this.head2Style = `top: ${200 + window.scrollY}px; left: 157px`
       this.head3Style = `top: ${200 + window.scrollY}px; left: 275px;`
