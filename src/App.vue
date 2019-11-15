@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="footer">
+      <div>Hiding Under the Tree Hut</div> 
+      <div class="footer__small">5 de Dezembro</div> 
+    </div>
+  
+
   </div>
 </template>
 
@@ -17,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 
 body,html {
   margin: 0;
@@ -45,8 +53,18 @@ body,html {
                             #bbaedc 70%,
                             #c0addb 80%,
                             #3681a8 90%);
-  height: 1000vh;
+  height: 2500px;
   
   
+}
+
+.footer {
+  margin-top: 1800px;
+  font-size: 25px;
+  color: white;
+
+  &__small {
+    font-size: 18px;
+  }
 }
 </style>
