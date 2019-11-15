@@ -94,6 +94,7 @@ export default {
 
 .body {
   width: 40px;
+  height:122px;
   position: relative;
 }
 
