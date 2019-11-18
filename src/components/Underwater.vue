@@ -10,7 +10,7 @@
       </section>
 
       <section>
-        <div data-aos="fade-left"
+        <div data-aos="fade-right"
          data-aos-easing="ease-out-cubic">
             <div>debut record from</div>
             <div class="title">Cuckoo Let Us</div>
@@ -28,9 +28,30 @@
 
 
     <div class="box-center">
-        <img alt="artwork" src="@/assets/artwork.jpg">
-        <div> </div>
+        <img alt="artwork" src="@/assets/artwork.jpg">        
+
+        <div class="box-center__sub">
+            <a href="https://www.instagram.com/cuckooletus" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/cuckooletus" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://open.spotify.com/artist/1MXipnO4T21bGAFpyJN8F3" target="_blank">
+                <i class="fab fa-spotify"></i>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC1bycto3kxsztK_AjQWlIvw" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+        
     </div>
+
+
          
 </div>
 </template>
@@ -54,10 +75,6 @@ export default {
   width: 100%;
   height: 100%;
   background: #3681a8;
-
-  padding-top: 20vh;
-  
-  
 }
 section{
     height: 100vh;
@@ -76,6 +93,7 @@ section{
 
 .box-center {
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 
@@ -90,6 +108,18 @@ section{
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    a {
+        color: #d9f0e6;
+    }
+
+    &__sub {
+        font-size: 26px;
+        margin-top: 20vh;
+
+        i {
+            margin: 0 10px;
+        }
     }
 }
 </style>

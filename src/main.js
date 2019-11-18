@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import AOS from 'aos'
+import "normalize.css"
 import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false

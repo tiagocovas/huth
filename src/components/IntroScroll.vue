@@ -3,7 +3,7 @@
         <a>
         <span></span>
         </a>
-        where are the Cuckoos at?
+        where the Cuckoos at?
     </div>
 </template>
 
@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
 
 .intro-box {
   position: absolute;
@@ -22,6 +23,9 @@ export default {
   display: flex;
   justify-content: center;
   padding: 70vh 0;
+  
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
 }
 
 .intro-box a span::after {

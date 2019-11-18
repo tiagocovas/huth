@@ -3,7 +3,7 @@
 
     <div class="main">
       <intro-scroll />
-      <Main msg="Welcome to Your Vue.js App"/>
+      <Main />
     </div>
     <underwater />
 
@@ -27,6 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../node_modules/normalize.css/normalize.css';
 
 body,html {
   margin: 0;

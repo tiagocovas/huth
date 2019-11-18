@@ -102,6 +102,11 @@ export default {
 
   &__box {
     width: $small-width;
+
+    // @media screen and (min-width: $large-width) {
+    //   width: $large-width;
+    // }
+
   }
 }
 
@@ -113,6 +118,10 @@ export default {
 .head {
   width: 60px;
   margin: 23px;
+
+  // @media screen and (min-width: $large-width) {
+  //   width: 100px;
+  // }
 }
 
 .head-1 {
@@ -131,6 +140,10 @@ export default {
   width: 40px;
   height:122px;
   position: relative;
+
+  // @media screen and (max-width: $large-width) {
+  //   width: 60px;
+  // }
 }
 
 .body-1 {
@@ -151,6 +164,10 @@ export default {
   justify-content: space-around;
 
   margin-top: 200px;
+
+  // @media screen and (min-width: $large-width) {
+  //   width: $large-width;
+  // }
 }
 
 .footer {
