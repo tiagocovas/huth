@@ -46,7 +46,6 @@ export default {
 
   methods: {
     updateScroll() {
-      console.log(`${window.scrollY} at ${window.innerHeight}`);
       if (window.scrollY > window.innerHeight) {
         this.body1Style = `top: ${window.scrollY}px; ${this.bodypart}`
 

@@ -120,18 +120,16 @@ section{
 
     padding: 10vh 0;
 
-    
-
-    img {
+    > img {
       width: 80%;
       box-shadow: 0 0 10px rgba(0,0,0,0.6);
      -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
      -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 
-        @media screen and (min-width: $large-breakpoint) {
-            max-width: 600px;
-        }
+    @media screen and (min-width: $large-breakpoint) {
+        max-width: 30vw;
+    }
     }
     a {
         color: #d9f0e6;
