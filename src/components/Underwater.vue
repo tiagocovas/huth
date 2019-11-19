@@ -37,7 +37,10 @@
                 </div>
             </div>
         </a>
-        
+
+        <div class="box-center__sub">
+            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1MXipnO4T21bGAFpyJN8F3&size=detail&theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; color: #FFF" allowtransparency="true"></iframe>
+        </div>
 
         <div class="box-center__sub">
             <a href="https://www.instagram.com/cuckooletus" target="_blank">
@@ -46,10 +49,6 @@
 
             <a href="https://www.facebook.com/cuckooletus" target="_blank">
                 <i class="fab fa-facebook-f"></i>
-            </a>
-
-            <a href="https://open.spotify.com/artist/1MXipnO4T21bGAFpyJN8F3" target="_blank">
-                <i class="fab fa-spotify"></i>
             </a>
 
             <a href="https://www.youtube.com/channel/UC1bycto3kxsztK_AjQWlIvw" target="_blank">
@@ -138,10 +137,16 @@ section{
 
     &__sub {
         font-size: 26px;
-        margin-top: 10vh;
+        margin-top: 5vh;
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
 
         i {
             margin: 0 10px;
+        }
+        > iframe {
+            margin-left: 100px;
         }
 
         @media screen and (min-width: $large-breakpoint) {
@@ -150,7 +155,6 @@ section{
             i {
                 margin: 0 30px;
             }
-            
         }
         
     }
