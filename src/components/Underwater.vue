@@ -97,7 +97,7 @@ section{
     letter-spacing: 3px;
 
     @media screen and (min-width: $large-breakpoint) {
-        font-size: 50px;
+        font-size: 70px;
     }
 }
 
@@ -105,7 +105,7 @@ section{
     font-size: 40px;
 
     @media screen and (min-width: $large-breakpoint) {
-        font-size: 80px;
+        font-size: 120px;
     }
 }
 
@@ -170,7 +170,10 @@ section{
     font-size: 16px;
     
     @media screen and (min-width: $large-breakpoint) {
-        font-size: 26px;
+        width: 400px;
+        font-size: 40px;
+        line-height: 80px;
+        height: 80px;
     }
 }
 .btn span {
