@@ -37,6 +37,11 @@ body,html {
   background: #f7f0e9;
   height: 100%;
   width: 100%;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #app {

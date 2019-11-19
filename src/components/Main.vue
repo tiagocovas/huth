@@ -36,9 +36,9 @@ export default {
       head1Style: '',
       head2Style: '',
       head3Style: '',
-      body1Style: 'top: 620px;',
-      body2Style: 'top: 800px;',
-      body3Style: 'top: 1100px;',
+      body1Style: 'top: 100vh;',
+      body2Style: 'top: calc(100vh + 300px);',
+      body3Style: 'top: calc(100vh + 600px);',
       bodypart: '',
       aligned: false
     };
@@ -46,14 +46,14 @@ export default {
 
   methods: {
     updateScroll() {
-      if (window.scrollY > 620) {
+      console.log(`${window.scrollY} at ${window.innerHeight}`);
+      if (window.scrollY > window.innerHeight) {
         this.body1Style = `top: ${window.scrollY}px; ${this.bodypart}`
 
-        if (window.scrollY > 778) {
+        if (window.scrollY > (window.innerHeight + 300)) {
           this.body2Style = `top: ${window.scrollY}px; ${this.bodypart}`
           
-          if (window.scrollY > 1104) {
-            // this.body3Style = `top: ${window.scrollY - 300}px; ${this.bodypart}`
+          if (window.scrollY > (window.innerHeight + 600)) {
 
             this.aligned = true;
 
@@ -103,9 +103,11 @@ export default {
   &__box {
     width: $small-width;
 
-    // @media screen and (min-width: $large-width) {
-    //   width: $large-width;
-    // }
+    @media screen and (min-width: $large-breakpoint) {
+      display: flex;
+      justify-content: space-around;
+      width: $large-width;
+    }
 
   }
 }
@@ -119,13 +121,18 @@ export default {
   width: 60px;
   margin: 23px;
 
-  // @media screen and (min-width: $large-width) {
-  //   width: 100px;
-  // }
+  @media screen and (min-width: $large-breakpoint) {
+    width: 120px;
+    margin: 0;
+  }
 }
 
 .head-1 {
-  padding-top: 15px;
+  padding-top: 20px;
+
+  @media screen and (min-width: $large-breakpoint) {
+    padding-top: 40px;
+  }
 }
 
 .head-3 {
@@ -138,12 +145,13 @@ export default {
 
 .body {
   width: 40px;
-  height:122px;
+  height: 122px;
   position: relative;
 
-  // @media screen and (max-width: $large-width) {
-  //   width: 60px;
-  // }
+  @media screen and (min-width: $large-breakpoint) {
+    width: 80px;
+    height: auto;
+  }
 }
 
 .body-1 {
@@ -165,9 +173,10 @@ export default {
 
   margin-top: 200px;
 
-  // @media screen and (min-width: $large-width) {
-  //   width: $large-width;
-  // }
+  @media screen and (min-width: $large-breakpoint) {
+    width: $large-width;
+    margin-top: 250px;
+  }
 }
 
 .footer {

@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import "@/assets/variables.scss";
 
 .intro-box {
   position: absolute;
@@ -25,7 +26,13 @@ export default {
   padding: 70vh 0;
   
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
   color: #2c3e50;
+
+  @media screen and (min-width: $large-breakpoint) {
+      font-size: 40px;
+  }
+
 }
 
 .intro-box a span::after {
