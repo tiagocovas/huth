@@ -97,7 +97,7 @@ section{
     letter-spacing: 3px;
 
     @media screen and (min-width: $large-breakpoint) {
-        font-size: 70px;
+        font-size: 50px;
     }
 }
 
@@ -105,7 +105,7 @@ section{
     font-size: 40px;
 
     @media screen and (min-width: $large-breakpoint) {
-        font-size: 120px;
+        font-size: 80px;
     }
 }
 
@@ -145,7 +145,7 @@ section{
         }
 
         @media screen and (min-width: $large-breakpoint) {
-            font-size: 40px;
+            font-size: 30px;
 
             i {
                 margin: 0 30px;
@@ -168,8 +168,8 @@ section{
     font-size: 16px;
     
     @media screen and (min-width: $large-breakpoint) {
-        width: 400px;
-        font-size: 40px;
+        width: 20vw;
+        font-size: 30px;
         line-height: 80px;
         height: 80px;
     }
