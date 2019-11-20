@@ -116,12 +116,17 @@ section{
     align-items: center;
 
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 
-    padding: 10vh 0;
+    margin-top: 100px;
+
+    @media screen and (min-width: $large-breakpoint) {
+        justify-content: space-around;
+    }
 
     > img {
       width: 80%;
+      max-width: 300px;
       box-shadow: 0 0 10px rgba(0,0,0,0.6);
      -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
@@ -130,6 +135,8 @@ section{
     @media screen and (min-width: $large-breakpoint) {
         max-width: 30vw;
     }
+
+
     }
     a {
         color: #d9f0e6;
@@ -138,7 +145,7 @@ section{
 
     &__sub {
         font-size: 26px;
-        margin-top: 10vh;
+        margin-top: 30px;
 
         i {
             margin: 0 10px;
@@ -169,7 +176,7 @@ section{
     
     @media screen and (min-width: $large-breakpoint) {
         width: 20vw;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 80px;
         height: 80px;
     }
