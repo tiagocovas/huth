@@ -57,17 +57,18 @@ body,html {
 }
 
 .main {
-  background: linear-gradient(#fcfcc5 0%,
-                          #d9f0e6 10%, 
-                          #d4e9d6 20%, 
-                          #c8ebe7 30%,
-                          #b8eaf5 40%,
-                          #c8def6 50%,
-                          #cad8f3 60%,
-                          #bbaedc 70%,
-                          #c0addb 80%,
-                          #3681a8 90%);
-  height: 3000px;
+  background: 
+              linear-gradient(rgb(252,252,197, 0.7) 0%,
+                          rgba(217,240,230, 0.7) 10%, 
+                          rgba(212,233,214, 0.7) 20%, 
+                          rgba(200,235,231, 0.7) 30%,
+                          rgba(184,234,245, 0.7) 40%,
+                          rgba(200,222,246, 0.7) 50%,
+                          rgba(202,216,243, 0.7) 60%,
+                          rgba(187,174,220, 0.7) 70%,
+                          rgba(192,173,219, 0.7) 80%,
+                          rgba(54,129,168, 0.7) 90%), url(./assets/whitenoise.png) left top repeat;
+  height: 2500px;
 }
 
 

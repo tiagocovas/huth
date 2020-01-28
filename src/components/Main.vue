@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <!-- <div class="clouds">
+      <img class="cloud-1" src="./../assets/cloud-1.png" >
+      <img class="cloud-2" src="./../assets/cloud-2.png" >
+    </div> -->
 
     <div class="fixed">
       <div class="fixed__box">
@@ -25,6 +29,7 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
 export default {
   name: 'HelloWorld',
   props: {
@@ -56,16 +61,12 @@ export default {
 
             this.aligned = true;
 
-            if (window.scrollY > 1920) {
+            if (window.scrollY > 1800) {
               this.bodypart = `opacity: 0.7`
-              
-              if (window.scrollY > 2200) {
-                this.bodypart = `opacity: 0.3`
-
-                if (window.scrollY > 2500) {
-                  this.bodypart = `opacity: 0.0`
-                }
-              }
+            
+              if (window.scrollY > 1870) {
+                this.bodypart = `opacity: 0.0`
+              }  
 
             } else {
               this.bodypart = `opacity: 1`
@@ -81,6 +82,21 @@ export default {
 
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
+
+    gsap
+      .timeline({
+        repeat: -1,
+        yoyo: true
+      })
+      .add('start')
+      .to('.cloud-1', {
+        duration: 30,
+        x: 600
+      }, 'start')
+      .to('.cloud-2', {
+        duration: 15,
+        x: -300
+      }, 'start')
   }
 }
 </script>
@@ -109,6 +125,11 @@ export default {
     }
 
   }
+}
+
+.clouds {
+  position: relative;
+  overflow: hidden;
 }
 
 .lower-fixed {
@@ -163,6 +184,21 @@ export default {
 
 .body-3 {
   left: -4px;
+}
+
+.cloud-1 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  overflow: hidden;
+}
+
+.cloud-2 {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  max-width: 1200px;
+  overflow: hidden;
 }
 
 .bodies {
