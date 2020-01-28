@@ -168,7 +168,6 @@ footer {
     iframe {
         
         @media screen and (max-width: $large-breakpoint) {
-            margin-left: 85px;
             margin-top: 10px;
         }
     }
